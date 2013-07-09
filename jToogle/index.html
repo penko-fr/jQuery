@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/jToogle.css"/>
+		<script  type="text/javascript" src="../jquery-2.0.3.min.js"></script>
+		<script  type="text/javascript" src="./jToogle.js"></script>
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+			
+			//Simple example
+			$('.jToogle').jToogle({ 
+            	'onToogle': function(element, value){
+				    $('#result'+element.attr('id')).html("change value: " + value);
+				}
+			});
+
+			//Click anywhere and default to ON
+			$('.jToogle2').jToogle({
+		    	'default': 'on', 
+		    	'mode' : false,     
+            	'onToogle': function(element, value){
+				    $('#result'+element.attr('id')).html("change value: " + value);
+				}
+			});
+
+			//Smaller jToogle
+			$('.jToogle3').jToogle({   
+		            'onToogle': function(element, value){				    
+		            	$('#result'+element.attr('id')).html("change value: " + value);
+				    }
+			});
+
+			//Customizable
+			$('.jToogleYesNo').jToogle({   
+		            'onToogle': function(element, value){				    
+		            	$('#result'+element.attr('id')).html("change value: " + value);
+				    }
+			});
+
+			//Click to change
+			$('#changeit').click(function(e){
+				$('#5').jToogleChange();
+			});
+
+		});
+		
+		</script>
+
+
+		<style type="text/css">
+			.result{ height:20px;}
+		</style>
+	</head>
+	<body>
+		<h2>jToogle</h2>
+
+		<h3>Simple example</h3>
+		<p>Touch only top of switch to change value</p>
+		<!-- jToogle-->
+		<div id="1" class="jToogle"></div>
+		<div id="result1" class="result"></div>
+
+		<p>Touch anywhere of the switch to change value</p>
+		<!-- jToogle-->
+		<div id="2" class="jToogle2"></div>
+		<div id="result2" class="result"></div>
+
+		<p>Full customization</p>
+		<!-- jToogle-->
+		<div id="3" class="jToogleYesNo"></div>
+		<div id="result3" class="result"></div>
+
+		<h3>Smaller</h3>
+		<div id="4" class="jToogle3"></div>
+		<div id="result4" class="result"></div>
+
+
+		<h3>Click to change </h3>
+		<div  id="5" class="jToogle"></div> <input type="button" value="Change !" id="changeit"/>
+		<div id="result5" class="result"></div>
+
+
+	</body>
+</html>

@@ -1,0 +1,74 @@
+/** Example Toogle 1 **/
+.jToogle{
+	width: 100px;
+	height:30px;
+	background: url(./jToogle.png) no-repeat top;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #666;
+}
+
+
+.jToogle .hover{
+	width: 50px;
+	height:30px;
+	border-right: 3px;
+	background: url(./jToogle.png) no-repeat bottom;
+}
+
+
+/** Example Toogle 2 **/
+.jToogle2{
+	width: 100px;
+	height:30px;
+	background: url(./jToogle.png) no-repeat top;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #666;
+}
+
+
+.jToogle2 .hover{
+	width: 50px;
+	height:30px;
+	border-right: 3px;
+	background: url(./jToogle.png) no-repeat bottom;
+}
+
+
+/** Example Toogle 1 **/
+.jToogle3{
+	width: 67px;
+	height:20px;
+	background: url(./jToogle2.png) no-repeat top;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	border: 1px solid #666;
+}
+
+
+.jToogle3 .hover{
+	width: 33px;
+	height:20px;
+	border-right: 3px;
+	background: url(./jToogle2.png) no-repeat bottom;
+}
+
+
+/** Example Toogle 1 **/
+.jToogleYesNo{
+	width: 100px;
+	height:30px;
+	background: url(./jToogle3.png) no-repeat top;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #666;
+}
+
+
+.jToogleYesNo .hover{
+	width: 50px;
+	height:30px;
+	border-right: 3px;
+	background: url(./jToogle3.png) no-repeat bottom;
+}
